@@ -1,0 +1,42 @@
+#container {
+    width: 100%;
+    padding: 60px;
+    display: flex;
+}
+
+#container-menu {
+    margin-right: 60px;
+}
+
+#container-content {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer */
+}
+
+#container-content::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in WebKit browsers */
+}
+
+#container-indicator{
+    margin-left: 60px;
+    height: fit-content;
+    align-self: end;
+}
+
+.indicator{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.active-indicator{
+    background-color: #F2F2F2;
+}
+
+.inative-indicator{
+    border: 4px solid #F2F2F2
+}
