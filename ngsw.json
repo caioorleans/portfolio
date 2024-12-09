@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1733780226335,
+  "timestamp": 1733780440607,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -59,7 +59,7 @@
     "/assets/icons/linkedin-icon.svg": "8c3d2f1811283079758092f55b1b4319c4997fba",
     "/assets/images/profile_picture.png": "62b7740dfdc101c00060fbd1456f8ae034dc231e",
     "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/index.html": "1b53702e691a4c237e6b2cc3c9d9be1a863f7a7f",
+    "/index.html": "c36742d99982c11feed108884d476fb98743bb8b",
     "/main-7DLYQZNH.js": "121b1b1e816251d48f6a549b466aa7444e7f2c1d",
     "/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
