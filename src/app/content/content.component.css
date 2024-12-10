@@ -1,3 +1,7 @@
+#photo-description-container {
+    margin-bottom: 40px;
+}
+
 h3 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -9,4 +13,10 @@ p {
 
 ul {
     margin-left: 20px;
+}
+
+@media(min-width: 900px) {
+    #photo-description-container {
+        display: none;
+    }
 }
