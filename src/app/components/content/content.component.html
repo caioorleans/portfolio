@@ -6,17 +6,17 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate  ipsum sem, sit amet aliquam tellus consectetur a. Nulla bibendum  ultricies leo, sed iaculis ligula elementum vitae. Sed sapien ex,  lacinia a efficitur eget, scelerisque nec nibh.</p>
 </app-section>
 
+<app-section [title]="info.languages.title">
+    <ul id="languages-spoken">
+        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
+    </ul>
+</app-section>
+
 <app-section [title]="info.qualifications.title">
     <ul>
         <app-qualification-item 
             *ngFor="let item of info.qualifications.content" 
             [qualification]="item">
         </app-qualification-item>
-    </ul>
-</app-section>
-
-<app-section [title]="info.languages.title">
-    <ul id="languages-spoken">
-        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
     </ul>
 </app-section>
