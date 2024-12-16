@@ -1,8 +1,8 @@
 import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuComponent } from './menu/menu.component';
-import { ContentComponent } from './content/content.component';
+import { ContentComponent } from './components/content/content.component';
 import { isPlatformBrowser } from '@angular/common';
+import { MenuComponent } from './components/menu/menu.component';
 
 @Component({
   selector: 'app-root',

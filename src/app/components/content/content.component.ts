@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PhotoAndDescriptionComponent } from "../photo-and-description/photo-and-description.component";
+import { PhotoAndDescriptionComponent } from '../photo-and-description/photo-and-description.component';
 
 @Component({
   selector: 'app-content',
