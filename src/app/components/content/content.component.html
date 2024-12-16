@@ -14,3 +14,9 @@
         </app-qualification-item>
     </ul>
 </app-section>
+
+<app-section [title]="info.languages.title">
+    <ul id="languages-spoken">
+        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
+    </ul>
+</app-section>

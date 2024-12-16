@@ -2,6 +2,15 @@
     margin-bottom: 40px;
 }
 
+#languages-spoken {
+    display: flex;
+    flex-direction: column;
+}
+
+.languages-item {
+    margin-right: 60px;
+}
+
 h3 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -14,5 +23,11 @@ ul {
 @media(min-width: 900px) {
     #photo-description-container {
         display: none;
+    }
+}
+
+@media(min-width: 1200px){
+    #languages-spoken {
+        flex-direction: row;
     }
 }

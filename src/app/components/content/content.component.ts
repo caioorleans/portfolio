@@ -31,6 +31,19 @@ export class ContentComponent {
           studyPeriod: "2024 - Cursando"
         }
       ]
+    },
+    languages: {
+      title: "//Linguas Faladas",
+      content: [
+        {
+          language:"Português",
+          level:"Fluente"
+        },
+        {
+          language:"Inglês",
+          level:"Intermediário"
+        }
+      ]
     }
   }
 }
