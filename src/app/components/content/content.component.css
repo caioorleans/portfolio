@@ -16,8 +16,16 @@ h3 {
     margin-bottom: 20px;
 }
 
+p {
+    font-weight: 100;
+}
+
 ul {
     margin-left: 20px;
+}
+
+li {
+    font-weight: 100;
 }
 
 @media(min-width: 900px) {

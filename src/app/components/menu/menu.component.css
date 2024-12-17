@@ -9,6 +9,23 @@ ul {
     list-style: none;
 }
 
+.menu-item {
+    color: var(--color-primary);
+    font-weight: 100;
+    text-decoration: none;
+    transition: font-size 0.5s ease;
+}
+
+.menu-item:hover {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.selected-item{
+    font-weight: 400;
+    font-size: 26px;
+}
+
 #menu-itens li {
     font-size: 22px;
 }

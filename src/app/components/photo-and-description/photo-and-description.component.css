@@ -4,6 +4,7 @@ h1 {
 
 h2 {
     font-size: 22px;
+    font-weight: 100;
 }
 
 @Media(max-width: 480px){
