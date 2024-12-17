@@ -30,6 +30,15 @@
     background-color: var(--background-color);
     color: var(--secondary-color);
     height: fit-content;
+    cursor: default;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  li::marker {
+    color: var(--primary-color)
   }
 
   @media(min-width: 480px){

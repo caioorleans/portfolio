@@ -3,6 +3,10 @@ h3 {
     margin-bottom: 20px;
 }
 
+span {
+    color: var(--primary-color);
+}
+
 div {
     margin-bottom: 40px;
 }

@@ -40,14 +40,14 @@
     height: 24px;
     border-radius: 4px;
     margin-top: 4px;
+    border: 4px solid var(--secondary-color);
+    cursor:pointer;
+    transition: all 0.5s ease;
 }
 
-.active-indicator{
-    background-color: var(--secondary-color);
-}
-
-.inative-indicator{
-    border: 4px solid var(--secondary-color)
+.indicator:hover, .active-indicator{
+    background-color: var(--primary-color);
+    border-style: none;
 }
 
 @Media(max-width: 900px){

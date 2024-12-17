@@ -3,7 +3,7 @@
 </div>
 
 <app-section [title]="info.biografy.title">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate  ipsum sem, sit amet aliquam tellus consectetur a. Nulla bibendum  ultricies leo, sed iaculis ligula elementum vitae. Sed sapien ex,  lacinia a efficitur eget, scelerisque nec nibh.</p>
+    <p *ngFor="let item of info.biografy.content">{{item}}</p>
 </app-section>
 
 <app-section [title]="info.languages.title">
@@ -18,5 +18,18 @@
             *ngFor="let item of info.qualifications.content" 
             [qualification]="item">
         </app-qualification-item>
+    </ul>
+</app-section>
+
+<app-section [title]="info.experiences.title">
+    <ul>
+        <li *ngFor="let item of info.experiences.content">
+            <h4>{{item.position}}</h4>
+            <ul>
+                <li>{{item.description}}</li>
+                <li>{{item.company}}</li>
+                <li>{{item.period}}</li>
+            </ul>
+        </li>
     </ul>
 </app-section>

@@ -14,11 +14,15 @@ import { CommonModule } from '@angular/common';
 export class ContentComponent {
   info = {
     biografy : {
-      title: "//Biografia",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate  ipsum sem, sit amet aliquam tellus consectetur a. Nulla bibendum  ultricies leo, sed iaculis ligula elementum vitae. Sed sapien ex,  lacinia a efficitur eget, scelerisque nec nibh."
+      title: "Biografia",
+      content: [
+        "Me chamo Caio Orleans, tenho 28 anos e sou de Fortaleza/CE. Meu primeiro contato com a programação foi em 2015, quando ingressei no curso de Matemática Industrial, pela Universidade Federal do Ceará (UFC).",
+        "Três anos depois, iniciei o curso de Sistemas e Mídias Digitais, também da UFC, no qual tive maior contato com a programação em forma midiática, seja através da criação de sites, jogos, aplicativos e sistemas digitais.",
+        "Nesses quase 10 anos, tive a oportunidade de trabalhar como desenvolvedor Front-End em dois projetos da UFC, como desenvolvedor Back-End em um projeto em parceria com a Prefeitura de Fortaleza e como desenvolvedor Mobile no Instituto Irede."
+      ]
     },
     qualifications: {
-      title: "//Formação",
+      title: "Formação",
       content: [
         {
           qualification: "Graduação em Sistemas e Mídias Digitais",
@@ -33,7 +37,7 @@ export class ContentComponent {
       ]
     },
     languages: {
-      title: "//Linguas Faladas",
+      title: "Linguas Faladas",
       content: [
         {
           language:"Português",
@@ -42,6 +46,29 @@ export class ContentComponent {
         {
           language:"Inglês",
           level:"Intermediário"
+        }
+      ]
+    },
+    experiences: {
+      title: "Experiências Profissionais",
+      content: [
+        {
+          position: "Bolsista desenvolvedor front-end no projeto Athena",
+          company: "Universidade Federal do Ceará",
+          description: "Blb bla bla bla bla",
+          period: "2020 - 2023"
+        },
+        {
+          position: "Bolsista desenvolvedor front-end no projeto Athena",
+          company: "Universidade Federal do Ceará",
+          description: "Blb bla bla bla bla",
+          period: "2020 - 2023"
+        },
+        {
+          position: "Bolsista desenvolvedor front-end no projeto Athena",
+          company: "Universidade Federal do Ceará",
+          description: "Blb bla bla bla bla",
+          period: "2020 - 2023"
         }
       ]
     }
