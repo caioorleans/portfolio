@@ -5,6 +5,12 @@
     font-weight: normal;
   }
 
+  :root {
+    --primary-color: #22FD63;
+    --secondary-color: #F2F2F2;
+    --background-color: #2B2B2B;
+  }
+
   @font-face {
     font-family: 'JetbrainsMono';
     src: url('assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
@@ -14,8 +20,8 @@
 
   body {
     font-family: 'JetbrainsMono', sans-serif;
-    background-color: #2B2B2B;
-    color: #F2F2F2;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
     height: fit-content;
   }
 
