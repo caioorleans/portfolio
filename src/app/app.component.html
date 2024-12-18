@@ -1,10 +1,10 @@
 <div id = "container" class = "full-height">
     <div id="menu-button" (click)="changeMenuState()">
         @if (showMenu) {
-            <img src="../assets/icons/cross.svg" alt="">
+            <img src="assets/icons/cross.svg" alt="">
         }
         @else {
-            <img src="../assets/icons/menu-burger.svg" alt="">
+            <img src="assets/icons/menu-burger.svg" alt="">
         }
     </div>
     <div *ngIf="showMenu" id="mobile-container-menu">

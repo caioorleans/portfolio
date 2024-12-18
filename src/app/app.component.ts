@@ -1,7 +1,6 @@
-import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { ContentComponent } from './components/content/content.component';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { MenuComponent } from './components/menu/menu.component';
 
 @Component({
