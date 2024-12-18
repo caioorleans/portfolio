@@ -2,7 +2,7 @@
     <app-photo-and-description></app-photo-and-description>
 </div>
 
-<app-section [title]="info.biografy.title">
+<app-section id="about-me" [title]="info.biografy.title">
     <p *ngFor="let item of info.biografy.content">{{item}}</p>
 </app-section>
 
@@ -12,7 +12,7 @@
     </ul>
 </app-section>
 
-<app-section [title]="info.qualifications.title">
+<app-section id="qualification" [title]="info.qualifications.title">
     <ul>
         <app-qualification-item 
             *ngFor="let item of info.qualifications.content" 
@@ -21,7 +21,7 @@
     </ul>
 </app-section>
 
-<app-section [title]="info.experiences.title">
+<app-section id="experiences" [title]="info.experiences.title">
     <ul>
         <app-experience-item 
             *ngFor="let item of info.experiences.content" 
