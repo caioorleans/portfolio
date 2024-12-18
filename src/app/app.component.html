@@ -9,7 +9,7 @@
     </div>
     <div *ngIf="showMenu" id="mobile-container-menu">
         <div id="black-screen"></div>
-        <app-menu></app-menu>
+        <app-menu (emitterCloseMenu)="changeMenuState()"></app-menu>
     </div>
     <div id = "container-menu" class="full-height">
         <app-menu></app-menu>
