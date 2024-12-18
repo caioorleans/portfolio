@@ -3,11 +3,18 @@ import { PhotoAndDescriptionComponent } from '../photo-and-description/photo-and
 import { SectionComponent } from '../section/section.component';
 import { QualificationItemComponent } from '../qualification-item/qualification-item.component';
 import { CommonModule } from '@angular/common';
+import { ExperienceItemComponent } from "../experience-item/experience-item.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [CommonModule, PhotoAndDescriptionComponent, SectionComponent, QualificationItemComponent],
+  imports: [
+    CommonModule,
+    PhotoAndDescriptionComponent, 
+    SectionComponent, 
+    QualificationItemComponent, 
+    ExperienceItemComponent
+  ],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })

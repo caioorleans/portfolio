@@ -23,13 +23,9 @@
 
 <app-section [title]="info.experiences.title">
     <ul>
-        <li *ngFor="let item of info.experiences.content">
-            <h4>{{item.position}}</h4>
-            <ul>
-                <li>{{item.description}}</li>
-                <li>{{item.company}}</li>
-                <li>{{item.period}}</li>
-            </ul>
-        </li>
+        <app-experience-item 
+            *ngFor="let item of info.experiences.content" 
+            [experienceItem]="item">
+        </app-experience-item>
     </ul>
 </app-section>
