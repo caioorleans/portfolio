@@ -44,3 +44,19 @@ ul {
 .icon:hover {
     width: 32px
 }
+
+@media(max-width: 900px){
+    .full-height{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 60px;
+        z-index: 10;
+        background-color: var(--background-color);
+    }
+
+    .photo-description {
+        display: none;
+    }
+}

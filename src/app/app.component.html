@@ -1,4 +1,16 @@
 <div id = "container" class = "full-height">
+    <div id="menu-button" (click)="changeMenuState()">
+        @if (showMenu) {
+            <img src="../assets/icons/cross.svg" alt="">
+        }
+        @else {
+            <img src="../assets/icons/menu-burger.svg" alt="">
+        }
+    </div>
+    <div *ngIf="showMenu" id="mobile-container-menu">
+        <div id="black-screen"></div>
+        <app-menu></app-menu>
+    </div>
     <div id = "container-menu" class="full-height">
         <app-menu></app-menu>
     </div>
@@ -6,9 +18,17 @@
         <app-content></app-content>
     </div>
     <div id = "container-indicator">
-        <div class="indicator active-indicator"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
+        <a href="#about-me">
+            <div class="indicator"></div>
+        </a>
+        <a href="#qualification">
+            <div class="indicator"></div>
+        </a>
+        <a href="#experiences">
+            <div class="indicator"></div>
+        </a>
+        <a href="#about-me">
+            <div class="indicator"></div>
+        </a>
     </div>
 </div>
