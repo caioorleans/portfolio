@@ -38,6 +38,10 @@
     cursor: pointer;
   }
 
+  .dynamic-content span {
+    color: var(--primary-color);
+  }
+
   li::marker {
     color: var(--primary-color)
   }
