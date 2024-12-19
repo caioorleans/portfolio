@@ -7,9 +7,12 @@
             <img src="assets/icons/menu-burger.svg" alt="">
         }
     </div>
-    <div *ngIf="showMenu" id="mobile-container-menu">
-        <div id="black-screen"></div>
-        <app-menu (emitterCloseMenu)="changeMenuState()"></app-menu>
+    <div id="mobile-container-menu">
+        <div class="black-screen" [ngClass]="{showBlackScreen: showMenu}"></div>
+        <app-menu
+            [isMenuActive]="showMenu"
+            (emitterCloseMenu)="changeMenuState()">
+        </app-menu>
     </div>
     <div id = "container-menu" class="full-height">
         <app-menu></app-menu>

@@ -50,10 +50,15 @@ ul {
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -300px;
         padding: 60px;
         z-index: 10;
         background-color: var(--background-color);
+        transition: left ease 0.5s;
+    }
+
+    .active {
+        left: 0;
     }
 
     .photo-description {
