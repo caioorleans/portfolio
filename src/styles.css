@@ -10,6 +10,12 @@
     --primary-color: #22FD63;
     --secondary-color: #F2F2F2;
     --background-color: #2B2B2B;
+
+    --norma-text-size: 1.6rem;
+  }
+
+  html {
+    font-size: 62.5%;
   }
 
   @font-face {

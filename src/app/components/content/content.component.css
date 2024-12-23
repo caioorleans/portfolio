@@ -1,5 +1,5 @@
 #photo-description-container {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 #languages-spoken {
@@ -8,29 +8,31 @@
 }
 
 .languages-item {
-    margin-right: 60px;
+    margin-right: 6rem;
 }
 
 h3 {
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 p {
+    font-size: var(--norma-text-size);
     font-weight: 100;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 li {
+    font-size: var(--norma-text-size);
     font-weight: 100;
 }
 
 .section {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 6rem;
 }
 
 @media(min-width: 900px) {

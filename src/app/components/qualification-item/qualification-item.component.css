@@ -1,11 +1,20 @@
 .item {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 2rem;
+}
+
+li {
+    font-size: var(--norma-text-size);
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 .item-detail{
+    font-size: var(--norma-text-size);
     font-weight: 100;
 }

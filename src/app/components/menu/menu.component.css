@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 30rem;
 }
 
 ul {
@@ -19,30 +19,30 @@ ul {
 .selected-item, .menu-item:hover{
     color: var(--primary-color);
     font-weight: 400;
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 
 #menu-itens li {
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 #icons-social-media {
-    height: 32px;
+    height: 3.2rem;
     display: flex;
     align-items: center;
 }
 
 #icons-social-media li {
-    margin-right: 18px;
+    margin-right: 1.8rem;
 }
 
 .icon {
-    width: 24px;
+    width: 2.4rem;
     transition: width 0.5s ease;
 }
 
 .icon:hover {
-    width: 32px
+    width: 3.2rem
 }
 
 @media(max-width: 900px){
@@ -50,8 +50,8 @@ ul {
         height: 100vh;
         position: fixed;
         top: 0;
-        left: -300px;
-        padding: 60px;
+        left: -30rem;
+        padding: 6rem;
         z-index: 10;
         background-color: var(--background-color);
         transition: left ease 0.5s;
