@@ -1,9 +1,9 @@
-<div id="photo-description-container">
+<div id="photo-description-container" class="animatable">
     <app-photo-and-description></app-photo-and-description>
 </div>
 
 <app-section id="about-me" class="section" [title]="info.biografy.title">
-    <p class="dynamic-content" [innerHTML]="item" *ngFor="let item of info.biografy.content">{{item}}</p>
+    <p class="dynamic-content animatable" [innerHTML]="item" *ngFor="let item of info.biografy.content">{{item}}</p>
 </app-section>
 
 <app-section id="qualification" class="section" [title]="info.qualifications.title">
@@ -21,7 +21,7 @@
     </ul>
 </app-section>
 
-<app-section id="experiences" class="section" [title]="info.experiences.title">
+<app-section id="experiences" class="section animatable" [title]="info.experiences.title">
     <ul>
         <app-experience-item 
             *ngFor="let item of info.experiences.content" 
