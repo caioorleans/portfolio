@@ -1,4 +1,4 @@
-<div id = "container" class = "full-height">
+<div id = "container" >
     <div id="menu-button" (click)="changeMenuState()">
         @if (showMenu) {
             <img src="assets/icons/cross.svg" alt="">
@@ -11,27 +11,28 @@
         <div class="black-screen" [ngClass]="{showBlackScreen: showMenu}"></div>
         <app-menu
             [isMenuActive]="showMenu"
+            [activeSection]="currentSection"
             (emitterCloseMenu)="changeMenuState()">
         </app-menu>
     </div>
     <div id = "container-menu" class="full-height">
-        <app-menu></app-menu>
+        <app-menu [activeSection]="currentSection"></app-menu>
     </div>
     <div id = "container-content" class="full-height">
         <app-content></app-content>
     </div>
     <div id = "container-indicator">
         <a href="#about-me">
-            <div class="indicator"></div>
+            <div class="indicator" [ngClass]="currentSection == 'about-me' ? 'active-indicator' : ''"></div>
         </a>
         <a href="#qualification">
-            <div class="indicator"></div>
+            <div class="indicator" [ngClass]="currentSection == 'qualification' ? 'active-indicator' : ''"></div>
         </a>
         <a href="#experiences">
-            <div class="indicator"></div>
+            <div class="indicator" [ngClass]="currentSection == 'experiences' ? 'active-indicator' : ''"></div>
         </a>
         <a href="#about-me">
-            <div class="indicator"></div>
+            <div class="indicator" [ngClass]="currentSection == '' ? 'active-indicator' : ''"></div>
         </a>
     </div>
 </div>

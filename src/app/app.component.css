@@ -1,9 +1,6 @@
 #container {
     width: 100%;
-    padding-right: 60px;
-    padding-left: 60px;
-    margin-top: 60px;
-    display: flex;
+    padding: 60px;
 }
 
 #menu-button {
@@ -45,39 +42,16 @@
     border: 1px solid white;
 }
 
-@media(min-width: 900px){
-    #menu-button {
-        display: none;
-    }
-}
-
-@media(min-width:480px){
-    #container {
-        padding: 60px;
-        margin: 0;
-    }
-}
-
 #container-menu {
-    margin-right: 60px;
+    display: none;
 }
 
 #container-content {
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer */
-}
-
-#container-content::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar in WebKit browsers */
 }
 
 #container-indicator{
-    margin-left: 60px;
-    height: fit-content;
-    align-self: end;
+    display: none;
 }
 
 .indicator{
@@ -95,20 +69,38 @@
     border-style: none;
 }
 
-@Media(max-width: 900px){
-    #container-menu {
+@media(min-width: 900px){
+    #menu-button {
         display: none;
     }
-}
 
-@Media(min-width: 900px){
     #mobile-container-menu {
         display: none;
     }
+
+    #container-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 60px 0 60px 60px;
+    }
+
+    #container-content {
+        padding-left: 300px;
+    }
 }
 
-@Media(max-width: 480px){
-    #container-indicator{
-        display: none;
+@media(min-width:480px){
+    #container-content {
+        padding-right: 84px;
+        margin-bottom: 60px;
+    }
+
+    #container-indicator {
+        display: block;
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
     }
 }

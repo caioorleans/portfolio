@@ -29,6 +29,10 @@ li {
     font-weight: 100;
 }
 
+.section {
+    scroll-margin-top: 60px;
+}
+
 @media(min-width: 900px) {
     #photo-description-container {
         display: none;

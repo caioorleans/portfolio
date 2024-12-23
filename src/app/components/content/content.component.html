@@ -1,18 +1,12 @@
-<div id="photo-description-container">
+<div id="photo-description-container" class="animatable">
     <app-photo-and-description></app-photo-and-description>
 </div>
 
-<app-section id="about-me" [title]="info.biografy.title">
-    <p class="dynamic-content" [innerHTML]="item" *ngFor="let item of info.biografy.content">{{item}}</p>
+<app-section id="about-me" class="section" [title]="info.biografy.title">
+    <p class="dynamic-content animatable" [innerHTML]="item" *ngFor="let item of info.biografy.content">{{item}}</p>
 </app-section>
 
-<app-section [title]="info.languages.title">
-    <ul id="languages-spoken">
-        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
-    </ul>
-</app-section>
-
-<app-section id="qualification" [title]="info.qualifications.title">
+<app-section id="qualification" class="section" [title]="info.qualifications.title">
     <ul>
         <app-qualification-item 
             *ngFor="let item of info.qualifications.content" 
@@ -21,7 +15,13 @@
     </ul>
 </app-section>
 
-<app-section id="experiences" [title]="info.experiences.title">
+<app-section [title]="info.languages.title">
+    <ul id="languages-spoken">
+        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
+    </ul>
+</app-section>
+
+<app-section id="experiences" class="section animatable" [title]="info.experiences.title">
     <ul>
         <app-experience-item 
             *ngFor="let item of info.experiences.content" 

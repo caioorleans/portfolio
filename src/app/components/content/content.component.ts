@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 import { PhotoAndDescriptionComponent } from '../photo-and-description/photo-and-description.component';
 import { SectionComponent } from '../section/section.component';
 import { QualificationItemComponent } from '../qualification-item/qualification-item.component';
