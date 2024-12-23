@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 import { PhotoAndDescriptionComponent } from '../photo-and-description/photo-and-description.component';
 import { SectionComponent } from '../section/section.component';
 import { QualificationItemComponent } from '../qualification-item/qualification-item.component';
@@ -25,6 +25,28 @@ export class ContentComponent {
   constructor(private sanitizer: DomSanitizer) {
     const rawHtml = '';
     this.htmlContent = this.sanitizer.bypassSecurityTrustHtml(rawHtml);
+  }
+
+  currentSection?: string = 'about-me';
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    const sections = document.querySelectorAll('.section');
+    let foundSection = this.currentSection ? this.currentSection : 'about-me'; // Default
+    const viewportMiddle = window.innerHeight / 2;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const sectionMiddle = rect.top + rect.height / 2; // Ponto central da seção
+
+      // Verifica se o centro da seção está próximo do meio do viewport
+      if (rect.bottom >= viewportMiddle - 10 && rect.top <= viewportMiddle + 10) {
+        foundSection = section.id;
+      }
+    });
+
+    this.currentSection = foundSection;
+    console.log(this.currentSection)
   }
 
   info = {

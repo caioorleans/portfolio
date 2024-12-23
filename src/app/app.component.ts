@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ContentComponent } from './components/content/content.component';
 import { CommonModule} from '@angular/common';
 import { MenuComponent } from './components/menu/menu.component';
