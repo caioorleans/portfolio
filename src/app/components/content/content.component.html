@@ -6,18 +6,18 @@
     <p class="dynamic-content" [innerHTML]="item" *ngFor="let item of info.biografy.content">{{item}}</p>
 </app-section>
 
-<app-section [title]="info.languages.title">
-    <ul id="languages-spoken">
-        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
-    </ul>
-</app-section>
-
 <app-section id="qualification" class="section" [title]="info.qualifications.title">
     <ul>
         <app-qualification-item 
             *ngFor="let item of info.qualifications.content" 
             [qualification]="item">
         </app-qualification-item>
+    </ul>
+</app-section>
+
+<app-section [title]="info.languages.title">
+    <ul id="languages-spoken">
+        <li *ngFor="let item of info.languages.content" class="languages-item">{{item.language}} - {{item.level}}</li>
     </ul>
 </app-section>
 

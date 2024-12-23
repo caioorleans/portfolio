@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class MenuComponent {
   @Output() emitterCloseMenu = new EventEmitter<void>();
-  @Input() isMenuActive?:Boolean
+  @Input() isMenuActive?:Boolean;
+  @Input() activeSection?:String;
 
   notifyCloseMenu(){
     this.emitterCloseMenu.emit();

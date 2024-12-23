@@ -94,6 +94,7 @@
 @media(min-width:480px){
     #container-content {
         padding-right: 84px;
+        margin-bottom: 60px;
     }
 
     #container-indicator {
