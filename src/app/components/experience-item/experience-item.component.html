@@ -1,6 +1,6 @@
-<li class="item" (click)="invertState()">
+<li class="item">
     <div>
-        <div id="container-title">
+        <div id="container-title" (click)="invertState()">
             <h4>{{experienceItem?.position}}</h4>
             @if (isOpen) {
                 <img class="icon" src="assets/icons/up-arrow.svg" alt="">
