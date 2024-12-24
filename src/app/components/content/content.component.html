@@ -21,8 +21,8 @@
     </ul>
 </app-section>
 
-<app-section id="experiences" class="section animatable" [title]="info.experiences.title">
-    <ul>
+<app-section id="experiences" class="section" [title]="info.experiences.title">
+    <ul id = "experiences-item">
         <app-experience-item 
             *ngFor="let item of info.experiences.content" 
             [experienceItem]="item">

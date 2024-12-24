@@ -35,6 +35,10 @@ li {
     scroll-margin-top: 6rem;
 }
 
+#experiences-item {
+    margin-left: 0;
+}
+
 @media(min-width: 900px) {
     #photo-description-container {
         display: none;

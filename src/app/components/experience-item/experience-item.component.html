@@ -1,10 +1,25 @@
-<li class="item animatable">
+<li class="item" (click)="invertState()">
     <div>
-        <h4>{{experienceItem?.position}}</h4>
+        <div id="container-title">
+            <h4>{{experienceItem?.position}}</h4>
+            @if (isOpen) {
+                <img class="icon" src="assets/icons/up-arrow.svg" alt="">
+            }
+            @else {
+                <img class="icon" src="assets/icons/down-arrow.svg" alt="">
+            }
+        </div>
+        
         <ul>
-            <li class="item-detail">{{experienceItem?.description}}</li>
             <li class="item-detail">{{experienceItem?.company}}</li>
-            <li class="item-detail">{{experienceItem?.period}}</li>
+            <li class="item-detail period"
+                [class]="isOpen? 'add-margin' : ''">
+                {{experienceItem?.period}}
+            </li>
+            <li class="item-detail description"
+                [class]="isOpen? 'show-description' : ''">
+                {{experienceItem?.description}}
+            </li>
         </ul>
     </div>
 </li>

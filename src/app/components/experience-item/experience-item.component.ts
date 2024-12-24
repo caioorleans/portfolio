@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './experience-item.component.html',
-  styleUrl: '../qualification-item/qualification-item.component.css'
+  styleUrls: ['../qualification-item/qualification-item.component.css','./experience-item.component.css']
 })
 export class ExperienceItemComponent {
 
@@ -15,4 +15,8 @@ export class ExperienceItemComponent {
     company:string,
     period:string
   }
+
+  isOpen:Boolean = false
+
+  invertState = () => this.isOpen = !this.isOpen
 }
