@@ -38,7 +38,7 @@ h4 {
 
 .show-description {
     border-top: 1px solid var(--primary-color);
-    max-height: 80rem;
+    max-height: 100rem;
     color: var(--secondary-color);
     padding-top: 1rem;
 }
