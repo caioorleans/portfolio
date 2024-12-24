@@ -5,6 +5,7 @@ import { QualificationItemComponent } from '../qualification-item/qualification-
 import { CommonModule } from '@angular/common';
 import { ExperienceItemComponent } from "../experience-item/experience-item.component";
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { ProjectsComponent } from '../projects/projects.component';
 
 @Component({
   selector: 'app-content',
@@ -14,7 +15,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
     PhotoAndDescriptionComponent, 
     SectionComponent, 
     QualificationItemComponent, 
-    ExperienceItemComponent
+    ExperienceItemComponent,
+    ProjectsComponent
   ],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
