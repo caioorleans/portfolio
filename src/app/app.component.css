@@ -66,7 +66,7 @@
 
 .indicator:hover, .active-indicator{
     background-color: var(--primary-color);
-    border-style: none;
+    border-color: var(--primary-color);
 }
 
 @media(min-width: 900px){

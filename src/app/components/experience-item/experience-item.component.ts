@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience-item',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './experience-item.component.html',
   styleUrls: ['../qualification-item/qualification-item.component.css','./experience-item.component.css']
 })
@@ -11,7 +12,7 @@ export class ExperienceItemComponent {
 
   @Input() experienceItem?: {
     position:string,
-    description:string,
+    description:string[],
     company:string,
     period:string
   }

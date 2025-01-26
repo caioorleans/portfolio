@@ -33,9 +33,9 @@ export class ContentComponent {
     biografy : {
       title: "Biografia",
       content: [
-        "Me chamo Caio Orleans, tenho 28 anos e sou de Fortaleza/CE. Meu primeiro contato com a programação foi em 2015, quando ingressei no curso de Matemática Industrial, pela Universidade Federal do Ceará (UFC).",
-        "Três anos depois, iniciei o curso de Sistemas e Mídias Digitais, também da UFC, no qual tive maior contato com a programação em forma midiática, seja através da criação de sites, jogos, aplicativos e sistemas digitais.",
-        "Nesses quase 10 anos, tive contato com diversas linguagens e tecnologias, entretando as que mantive maior foco foram <span>Spring Boot</span> com Java e <span>NestJs</span> com Typescript para backend, <span>Angular</span> para front-end web e <span>Jetpack Compose</span> com Kotlin para dispositivos Android. Ainda nesse período, tive a oportunidade de trabalhar como desenvolvedor Front-End em dois projetos da UFC, como desenvolvedor Back-End no projeto Juventude Digital na Prática, da Prefeitura de Fortaleza, e como desenvolvedor Mobile no Instituto Irede."
+        "Me chamo Caio Orleans, tenho 28 anos e sou de Fortaleza, Ceará. Meu primeiro contato com a programação foi em 2018, ao ingressar no curso de Sistemas e Mídias Digitais na Universidade Federal do Ceará (UFC).",
+        "Ao longo desses 8 anos de experiência, trabalhei com diversas linguagens e tecnologias, mas dediquei maior atenção a ferramentas como <span>Spring Boot com Java</span> e <span>NestJS com TypeScript</span> para backend, <span>Angular</span> para front-end web e <span>Jetpack Compose com Kotlin</span> para desenvolvimento mobile Android.",
+        "Atualmente curso especialização em Engenharia de Software, DevOps e Computação em Núvem pela Unifametro e estou no quarto período do curso de Lingua Inglesa da Casa de Cultura Britânica."
       ]
     },
     qualifications: {
@@ -72,19 +72,31 @@ export class ContentComponent {
         {
           position: "Bolsista desenvolvedor front-end nos projetos Athena e Aprendizagem Móvel e Colaborativa no Ensino Fundamental",
           company: "Universidade Federal do Ceará",
-          description: "Neste projeto tive a oportunidade de trabalhar, em conjunto com meus professores e demais bolsistas dos projetos, no desenvolvimento de funcionalidades do Athena, um repositório de Recursos Educacionais Digitais (RED) para professores e alunos do ensino fundamental. Tal repositório foi construído inteiramente com tecnologias front-end web, tais como HTML, CSS e Javascript, além dos frameworks e bibliotecas Bootstrap e Jquery. Dessa forma, minha principal contribuição para esses projetos foi a utilização de tais tecnologias, além de técnicas de UI/UX, para desenvolver novas funcionalidades para o repositório. Além disso, desenvolvi atividades acadêmicas, como escrita de artigos e apresentação de palestras e oficinas, o que me permitiu desenvolver Soft Skills relacionadas à oratória.",
+          description: [
+            "Neste projeto, colaborei com professores e demais bolsistas no desenvolvimento de funcionalidades para o Athena, um repositório de Recursos Educacionais Digitais (RED) voltado para professores e alunos do ensino fundamental. O repositório foi desenvolvido inteiramente com tecnologias de front-end web, como HTML, CSS e JavaScript, além do uso de frameworks e bibliotecas como Bootstrap e jQuery.",
+            "Minha principal contribuição foi a aplicação dessas tecnologias, juntamente com técnicas de UI/UX, para implementar novas funcionalidades no repositório, garantindo uma experiência mais intuitiva e eficiente para os usuários.",
+            "Além das atividades técnicas, também participei de atividades acadêmicas, incluindo a escrita de artigos, apresentações em palestras e oficinas. Essas experiências me permitiram desenvolver soft skills, especialmente relacionadas à oratória e comunicação."
+          ],
           period: "2020 - 2023"
         },
         {
           position: "Bolsista desenvolvedor back-end no projeto Juventude Digital na Prática",
           company: "Casa da Cultura Digital",
-          description: "Blb bla bla bla bla",
+          description: [
+            "Neste projeto, colaborei com minha equipe em diversas etapas do desenvolvimento do produto, assim ajudando a identificar as principais necessidades do cliente, elencar os requisitos do sistema, elaborar a sua arquitetura, entre outros.",
+            "Entretanto, minha maior contribuição para o projeto foi como desenvolvedor back-end da aplicação, no qual utilizamos NestJs para a criação da API, acompanhada da dependência Prisma ORM para mapeamento das entidades e comunicação com banco de dados, MariaDB para a persistência de dados, AWS para deploy e hospedagem, entre outras tecnologias.",
+            "Como resultado do desenvolvimento, temos um sistema robusto que permite o cadastro e autenticação de usuários, registro das atividades dos mesmos e geração de relatórios."
+          ],
           period: "2023"
         },
         {
           position: "Residente em desenvolvimento Android",
           company: "Instituto Irede",
-          description: "Blb bla bla bla bla",
+          description: [
+            "Durante a residência, colaborei com a equipe no desenvolvimento de um aplicativo Android utilizando Kotlin e Jetpack Compose, desde a concepção até a entrega do produto final. O aplicativo foi projetado para atender às necessidades dos usuários finais e oferecer uma experiência intuitiva e eficiente.",
+            "Minhas principais contribuições incluíram a implementação de funcionalidades como autenticação de usuários, exibição de vídeo aulas, visualização de materiais de apoio em PDF e download de certificados. Utilizamos o Retrofit para comunicação com APIs e o Koin como gerenciador de dependências, garantindo um código limpo e modular.",
+            "Além disso, participei ativamente do processo de desenvolvimento ágil, utilizando metodologias como Scrum e Kanban para planejar, priorizar e acompanhar as tarefas, promovendo uma colaboração eficiente dentro do time."
+          ],
           period: "2024"
         }
       ]

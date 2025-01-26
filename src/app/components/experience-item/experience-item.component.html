@@ -18,7 +18,10 @@
             </li>
             <li class="item-detail description"
                 [class]="isOpen? 'show-description' : ''">
-                {{experienceItem?.description}}
+                <p *ngFor="let item of experienceItem?.description"
+                    [style.margin-top]="isOpen ? '1rem' : '0rem'">
+                    {{item}}
+                </p>
             </li>
         </ul>
     </div>

@@ -38,13 +38,12 @@ h4 {
 
 .show-description {
     border-top: 1px solid var(--primary-color);
-    max-height: 100rem;
+    max-height: 200rem;
     color: var(--secondary-color);
-    padding-top: 1rem;
 }
 
 @media(min-width: 480px){
     .show-description {
-        max-height: 30rem;
+        max-height: 35rem;
     }
 }
