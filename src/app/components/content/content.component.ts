@@ -31,10 +31,10 @@ export class ContentComponent {
 
   info = {
     biografy : {
-      title: "Biografia",
+      title: "Sobre mim",
       content: [
         "Me chamo Caio Orleans, tenho 28 anos e sou de Fortaleza, Ceará. Meu primeiro contato com a programação foi em 2018, ao ingressar no curso de Sistemas e Mídias Digitais na Universidade Federal do Ceará (UFC).",
-        "Ao longo desses 8 anos de experiência, trabalhei com diversas linguagens e tecnologias, mas dediquei maior atenção a ferramentas como <span>Spring Boot com Java</span> e <span>NestJS com TypeScript</span> para backend, <span>Angular</span> para front-end web e <span>Jetpack Compose com Kotlin</span> para desenvolvimento mobile Android.",
+        "Tal curso me proporcionou uma base sólida em desenvolvimento de sistemas web, mobile e jogos, além de expandir minhas habilidades para áreas além da programação, como design gráfico, UX/UI, modelagem 3D, entre outras.",
         "Atualmente curso especialização em Engenharia de Software, DevOps e Computação em Núvem pela Unifametro e estou no quarto período do curso de Lingua Inglesa da Casa de Cultura Britânica."
       ]
     },
