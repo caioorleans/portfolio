@@ -6,9 +6,11 @@
     <p class="dynamic-content animatable" [innerHTML]="item" *ngFor="let item of info.biografy.content">{{item}}</p>
 </app-section>
 
-<app-section [title]="'Tecnologias'">
-    <ul id = "technologies">
-        <app-technology-item *ngFor="let item of info.technologies" [technologies]="item"></app-technology-item>
+<app-section id="technologies" [title]="'Tecnologias'">
+    <ul id = "technologies-container">
+        <app-technology-item 
+            *ngFor="let item of info.technologies" [technologies]="item"
+            [class]="!item.showInMobile ? 'dont-show-in-mobile' : ''"></app-technology-item>
     </ul>
 </app-section>
 

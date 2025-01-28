@@ -42,6 +42,7 @@ export class ContentComponent {
     },
     technologies: [
       {
+        showInMobile: false,
         icons : [
           {
             path: "assets/icons/git.svg",
@@ -51,6 +52,7 @@ export class ContentComponent {
         description: "Versionamento de Código"
       },
       {
+        showInMobile: false,
         icons : [
           {
             path: "assets/icons/scrum.svg",
@@ -60,6 +62,7 @@ export class ContentComponent {
         description: "Metodologías Ágeis"
       },
       {
+        showInMobile: false,
         icons : [
           {
             path: "assets/icons/aws.svg",
@@ -69,6 +72,7 @@ export class ContentComponent {
         description: "Deploy"
       },
       {
+        showInMobile: true,
         icons : [
           {
             path: "assets/icons/angular.svg",
@@ -78,6 +82,7 @@ export class ContentComponent {
         description: "Front-end"
       },
       {
+        showInMobile: true,
         icons : [
           {
             path: "assets/icons/nest.svg",
@@ -91,6 +96,7 @@ export class ContentComponent {
         description: "Back-end"
       },
       {
+        showInMobile: true,
         icons : [
           {
             path: "assets/icons/kotlin.svg",
