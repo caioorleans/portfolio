@@ -1,0 +1,6 @@
+<li class="animatable">
+    <div>
+        <img *ngFor="let item of technologies?.icons" [src]="item.path" [alt]="item.description">
+    </div>
+    <p>{{technologies?.description}}</p>
+</li>

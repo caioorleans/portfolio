@@ -2,6 +2,13 @@
     margin-bottom: 4rem;
 }
 
+#technologies {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 #languages-spoken {
     display: flex;
     flex-direction: column;
@@ -42,6 +49,10 @@ li {
 @media(min-width: 900px) {
     #photo-description-container {
         display: none;
+    }
+
+    #technologies {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

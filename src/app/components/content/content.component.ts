@@ -6,18 +6,20 @@ import { CommonModule } from '@angular/common';
 import { ExperienceItemComponent } from "../experience-item/experience-item.component";
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ProjectsComponent } from '../projects/projects.component';
+import { TechnologyItemComponent } from "../technology-item/technology-item.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
   imports: [
     CommonModule,
-    PhotoAndDescriptionComponent, 
-    SectionComponent, 
-    QualificationItemComponent, 
+    PhotoAndDescriptionComponent,
+    SectionComponent,
+    QualificationItemComponent,
     ExperienceItemComponent,
-    ProjectsComponent
-  ],
+    ProjectsComponent,
+    TechnologyItemComponent
+],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
@@ -38,6 +40,70 @@ export class ContentComponent {
         "Atualmente curso especialização em Engenharia de Software, DevOps e Computação em Núvem pela Unifametro e estou no quarto período do curso de Lingua Inglesa da Casa de Cultura Britânica."
       ]
     },
+    technologies: [
+      {
+        icons : [
+          {
+            path: "assets/icons/git.svg",
+            description: "Git e GitFlow"
+          },
+        ],
+        description: "Versionamento de Código"
+      },
+      {
+        icons : [
+          {
+            path: "assets/icons/scrum.svg",
+            description: "Scrum"
+          },
+        ],
+        description: "Metodologías Ágeis"
+      },
+      {
+        icons : [
+          {
+            path: "assets/icons/aws.svg",
+            description: "AWS"
+          },
+        ],
+        description: "Deploy"
+      },
+      {
+        icons : [
+          {
+            path: "assets/icons/angular.svg",
+            description: "Angular"
+          },
+        ],
+        description: "Front-end"
+      },
+      {
+        icons : [
+          {
+            path: "assets/icons/nest.svg",
+            description: "NestJs"
+          },
+          {
+            path: "assets/icons/spring.svg",
+            description: "SpringBoot"
+          },
+        ],
+        description: "Back-end"
+      },
+      {
+        icons : [
+          {
+            path: "assets/icons/kotlin.svg",
+            description: "Kotlin"
+          },
+          {
+            path: "assets/icons/android-studio.svg",
+            description: "Android Studio"
+          },
+        ],
+        description: "Mobile"
+      }
+    ],
     qualifications: {
       title: "Formação",
       content: [
