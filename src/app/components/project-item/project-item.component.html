@@ -1,0 +1,22 @@
+<div class="project-container border-radius">
+    <img [src]="'assets/images/' + item?.image" alt="" class="animatable project-image">
+    <div class="information-container">
+        <h4 class="animatable mb-1">{{item?.title}}</h4>
+        <p class="animatable mb-1">{{item?.description}}</p>
+        <div class="tech-container mb-2">
+            <p *ngFor="let tech of item?.technologies" class="animatable border-radius">{{tech}}</p>
+        </div>
+        <div class="buttons-container">
+            <button *ngIf="item?.links?.site" (click)="openSite(item?.links?.site)" class="animatable accs-site-btn mr-1 border-radius">
+                Acessar site
+            </button>
+            <button class="animatable accs-rep-btn border-radius" (click)="openSite(item?.links?.repository)" 
+                [class]="!item?.links?.site ? 'max-width':''">
+                <img src="assets/icons/github-icon.svg" alt="">
+                <p *ngIf="!item?.links?.site" class="ml-1">Acessar repositório</p>
+            </button>
+        </div>
+        
+    </div>
+</div>
+

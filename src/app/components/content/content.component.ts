@@ -7,6 +7,7 @@ import { ExperienceItemComponent } from "../experience-item/experience-item.comp
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ProjectsComponent } from '../projects/projects.component';
 import { TechnologyItemComponent } from "../technology-item/technology-item.component";
+import { ProjectItemComponent } from "../project-item/project-item.component";
 
 @Component({
   selector: 'app-content',
@@ -18,7 +19,8 @@ import { TechnologyItemComponent } from "../technology-item/technology-item.comp
     QualificationItemComponent,
     ExperienceItemComponent,
     ProjectsComponent,
-    TechnologyItemComponent
+    TechnologyItemComponent,
+    ProjectItemComponent
 ],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
@@ -171,6 +173,21 @@ export class ContentComponent {
           ],
           period: "2024"
         }
+      ]
+    },
+    projects: {
+      title:"Projetos",
+      content: [
+        {
+          title:"Portfólio",
+          description: "Projeto criado para demonstrar meu histórico, habilidades, experiências e projetos na área da tecnologia.",
+          image: "portfolio.png",
+          technologies: ["Angular"],
+          links: {
+            site:"https://caioorleans.github.io/portfolio",
+            repository:"https://github.com/caioorleans/portfolio"
+          }
+        },
       ]
     }
   }

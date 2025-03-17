@@ -1,28 +1,7 @@
-<li class="item">
-    <div>
-        <div id="container-title" (click)="invertState()">
-            <h4>{{experienceItem?.position}}</h4>
-            @if (isOpen) {
-                <img class="icon" src="assets/icons/up-arrow.svg" alt="">
-            }
-            @else {
-                <img class="icon" src="assets/icons/down-arrow.svg" alt="">
-            }
-        </div>
-        
-        <ul>
-            <li class="item-detail">{{experienceItem?.company}}</li>
-            <li class="item-detail period"
-                [class]="isOpen? 'add-margin' : ''">
-                {{experienceItem?.period}}
-            </li>
-            <li class="item-detail description"
-                [class]="isOpen? 'show-description' : ''">
-                <p *ngFor="let item of experienceItem?.description"
-                    [style.margin-top]="isOpen ? '1rem' : '0rem'">
-                    {{item}}
-                </p>
-            </li>
-        </ul>
-    </div>
+<li>
+    <h4 class="animatable">{{experienceItem?.position}}</h4>
+    <ul>
+        <li class="item-detail animatable">{{experienceItem?.company}}</li>
+        <li class="item-detail period add-margin animatable">{{experienceItem?.period}}</li>
+    </ul>
 </li>

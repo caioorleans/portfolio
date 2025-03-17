@@ -30,7 +30,7 @@
 </app-section>
 
 <app-section id="experiences" class="section" [title]="info.experiences.title">
-    <ul id = "experiences-item">
+    <ul>
         <app-experience-item 
             *ngFor="let item of info.experiences.content" 
             [experienceItem]="item">
@@ -38,4 +38,11 @@
     </ul>
 </app-section>
 
-<app-projects id="projects" class="section"></app-projects>
+<app-section id="projects" class="section" [title]="info.projects.title">
+    <ul style="margin-left: 0; list-style: none;">
+        <li *ngFor="let item of info.projects.content">
+            <app-project-item [item]="item"></app-project-item>
+            <hr *ngIf="item !== info.projects.content[info.projects.content.length - 1]">
+        </li>
+    </ul>
+</app-section>
