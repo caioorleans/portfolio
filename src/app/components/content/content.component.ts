@@ -188,6 +188,15 @@ export class ContentComponent {
             repository:"https://github.com/caioorleans/portfolio"
           }
         },
+        {
+          title:"Orleans Burger",
+          description: "Um aplicativo de pedidos de restaurante criado como projeto final do curso de Introdução ao Desenvolvimento Android.",
+          image: "orleans-burger.jpg",
+          technologies: ["Android", "Java", "XML"],
+          links: {
+            repository:"https://github.com/caioorleans/OrleansBurger"
+          }
+        },
       ]
     }
   }
